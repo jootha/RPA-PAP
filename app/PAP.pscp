@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConteXtorStudio Version="StudioReco V1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="XsdStudio.xsd">
+	<PROCESSUS>
+		<PROCESS Name="GLOBAL" Key="NoKey" Comment="Global Processus">
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="GLOBAL" />
+			</_DECLAREVAR>
+			<SCRIPTS />
+			<RESOURCES />
+		</PROCESS>
+	</PROCESSUS>
+	<APPLICATIONS>
+		<APPLI Name="PAP" CtxtId="3cc82298-7def-4e10-aea8-982899313d5e" Nature="WEB3" TechnoSDK="V3" Sync="250">
+			<CAPTURE Name="APPLI_IMMOBILIERAnnonces_1" CtxtId="2" Techno="WEB" />
+			<SCRIPTS />
+			<CRITERE>
+				<DOMAIN Scan="Full"><![CDATA[www.pap.fr]]></DOMAIN>
+			</CRITERE>
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="PAP" />
+			</_DECLAREVAR>
+			<_ECRANS>
+				<PAGE Name="pAccueil" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="5f3a653f-0c3c-4daf-811a-96eea36b4838">
+					<CRITERE>
+						<TITLE Scan="Full"><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP]]></TITLE>
+					</CRITERE>
+					<PATH><![CDATA[https://www.pap.fr/]]></PATH>
+					<OBJETS />
+					<CAPTURE Name="PAGE_IMMOBILIERAnnonces_1059062_1" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="11" Techno="WEB" Timestamp="25/03/2021 10:59:26" />
+				</PAGE>
+			</_ECRANS>
+			<PATH><![CDATA[https://www.pap.fr/]]></PATH>
+		</APPLI>
+	</APPLICATIONS>
+</ConteXtorStudio>
