@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<USER>
+	<BREAKPOINTS />
+	<BOOKMARKS />
+	<FINDHISTORY>
+		<FINDWHAT><![CDATA[POPUPS]]></FINDWHAT>
+		<FINDWHAT><![CDATA[POPUS]]></FINDWHAT>
+		<FINDWHAT><![CDATA[mamba]]></FINDWHAT>
+		<FINDWHAT><![CDATA[PAP]]></FINDWHAT>
+		<FINDWHAT><![CDATA[Mamba]]></FINDWHAT>
+		<REPLACEWITH><![CDATA[Recherche]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[PAP]]></REPLACEWITH>
+	</FINDHISTORY>
+	<DEBUGTRACEFINDHISTORY />
+	<OPENDOCS>
+		<OPENDOC LineNumber="7" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='PAP_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="12" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Labels']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="10" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Global']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="11" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="17" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS" Offset="0" Length="0" />
+		<OPENDOC LineNumber="21" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Declarations']" Offset="0" Length="0" />
+	</OPENDOCS>
+	<PROPERTIES>
+		<CurPerspective><![CDATA[2]]></CurPerspective>
+		<DebugTester><![CDATA[]]></DebugTester>
+	</PROPERTIES>
+	<WATCHES />
+	<APPLIFILTERS />
+	<EVENTFILTERS />
+	<WORKFLOW_MOSTUSED />
+</USER>

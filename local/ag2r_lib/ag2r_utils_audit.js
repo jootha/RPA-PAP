@@ -157,7 +157,8 @@ ag2r.audit = (function () {
 		*/
 		failStep: function(nomScenario, nomStep, commentaire){
 			var traceFolder = ((ctx.options.trace.autoRecordingStarted || ctx.options.trace.frameworkTraces) ? ctx.options.traceFolderRecording : ctx.options.traceFolder);
-			ctx.screenshot({File : ctx.options.path.log + '\\' + traceFolder + '\\' + _dateAudit + '.png'});
+			var dateErreur = ctx.getTimestamp(null, true, '-', false);
+      ctx.screenshot({File : ctx.options.path.log + '\\' + traceFolder + '\\' + dateErreur + '.png'});
 
 			_ecrireLogsFonctionnels(
 				{
@@ -199,7 +200,7 @@ ag2r.audit = (function () {
 				ag2r.audit.log("               " + (typeof commentaire === "string") ? commentaire : commentaire.message);
 			}
 			ag2r.audit.log("");		
-			sc.setError(e.error.KO, "Génération du diagnostic");
+			
 			return;
 		},
 		
