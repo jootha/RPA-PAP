@@ -53,7 +53,8 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
 	
-	sc.step(PAP.steps.stStartPAP);
+	sc.step(PAP.steps.stStartPAP, PAP.steps.stFillForm);
+	sc.step(PAP.steps.stFillForm);
  
 	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");
 	ag2r.audit.startScenario();

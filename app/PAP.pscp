@@ -106,6 +106,15 @@
 								</TAG>
 							</CRITERE>
 						</OBJET>
+						<OBJET Name="iNbChambres" CtxtId="e7b96824-b420-4550-8b92-bee2cb213fc9">
+							<CRITERE>
+								<TAG Name="SELECT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R3R1R0R1R0">
+									<ATT Name="id">
+										<VALUE Scan="Full"><![CDATA[nb_chambres]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
 						<OBJET Name="iSurfaceMin" CtxtId="63a2cb5f-b6ec-4b8a-a474-6f439fb1c279">
 							<CRITERE>
 								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R4R0R0R1R0">

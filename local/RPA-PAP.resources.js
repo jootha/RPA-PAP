@@ -18,7 +18,6 @@ PAP.pAcceuil.oMaison = PAP.pAcceuil.addItem('oMaison');
 PAP.pAcceuil.iNb_pieces = PAP.pAcceuil.addItem('iNb_pieces');
 PAP.pAcceuil.o3Pieces = PAP.pAcceuil.addItem('o3Pieces');
 PAP.pAcceuil.o4Pieces = PAP.pAcceuil.addItem('o4Pieces');
-PAP.pAcceuil.iNbChambres = PAP.pAcceuil.addItem('iNbChambres');
 PAP.pAcceuil.iSurfaceMin = PAP.pAcceuil.addItem('iSurfaceMin');
 PAP.pAcceuil.iPrixMax = PAP.pAcceuil.addItem('iPrixMax');
 
