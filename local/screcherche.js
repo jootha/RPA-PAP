@@ -1,12 +1,13 @@
 ﻿// ----------------------------------------------------------------
-//   Scenario: scPAP
+//   Scenario: scRecherche
 // ----------------------------------------------------------------
-GLOBAL.scenario({ scPAP: function(ev, sc) {
+
+GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	var rootData = sc.data;
 
 	sc.setMode(e.scenario.mode.clearIfRunning);
 	sc.onTimeout(600000, function(sc, st) {
-		ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error01 + st.name);
+		ag2r.audit.failStep(GLOBAL.labels.scenarios.scName, st.name, ag2r.errors.error01 + st.name);
 		GLOBAL.data.errors.push(ag2r.errors.error01 + st.name);
 		ag2r.ihm.close();
 
@@ -16,7 +17,7 @@ GLOBAL.scenario({ scPAP: function(ev, sc) {
 		sc.endScenario();
 	});
 	sc.onError(function(sc, st, ex) {
-		ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error00 + st.name + " - " + ex.message);
+		ag2r.audit.failStep(GLOBAL.labels.scenarios.scRecherche, st.name, ag2r.errors.error00 + st.name + " - " + ex.message);
 		GLOBAL.data.errors.push(ag2r.errors.error00 + st.name + " - " + ex.message);
 		var traceFolder = ((ctx.options.trace.autoRecordingStarted || ctx.options.trace.frameworkTraces) ? ctx.options.traceFolderRecording : ctx.options.traceFolder);		
 		ctx.screenshot({File : ctx.options.path.log + '\\' + traceFolder + '\\' + ag2r.audit.dateNow + '.png'});		
@@ -52,20 +53,8 @@ GLOBAL.scenario({ scPAP: function(ev, sc) {
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
 	
-	sc.step(GLOBAL.steps.Custom);
-
-	ag2r.audit.log("[INFO] Scenario scPAP lancé ...");
+	sc.step(PAP.steps.stStartPAP);
+ 
+	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");
 	ag2r.audit.startScenario();
 }}, ctx.dataManagers.rootData).setId('7bf54ce6-321a-4883-bd42-e93a20300c1c') ;
-
-
-// ----------------------------------------------------------------
-//   Step: Custom
-// ----------------------------------------------------------------
-GLOBAL.step({ Custom: function(ev, sc, st) {
-	var rootData = sc.data;
-	ctx.workflow('scPAP', '99bbd12f-241f-43b8-bceb-9530bf814f9a') ;
-	// Describe functionality to be implemented in JavaScript later in the project.
-	sc.endStep(); // end Scenario
-	return;
-}});
