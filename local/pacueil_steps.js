@@ -170,6 +170,6 @@ PAP.step({ stLieu: function(ev, sc, st) {
 				ag2r.audit.endStep(sc.name,st.name);
 				sc.endStep();
 				return;
-			}, 200);
+			}, 500);
 	}, 200);
 }});

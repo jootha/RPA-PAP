@@ -20,9 +20,10 @@
 	</FINDHISTORY>
 	<DEBUGTRACEFINDHISTORY />
 	<OPENDOCS>
-		<OPENDOC LineNumber="59" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="150" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='PAP_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pAcceuil']/OBJET[@Name='oFormRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="56" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="4" SearchPath="APPLI[@Name='PAP']/SCRIPTS" Offset="0" Length="0" />
+		<OPENDOC LineNumber="5" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pAccueil']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
