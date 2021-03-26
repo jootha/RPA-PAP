@@ -13,6 +13,7 @@
 		<APPLI Name="PAP" CtxtId="16dc8d06-e54f-4e97-844b-ce59e14853f4" Nature="WEB3" TechnoSDK="V3" Sync="250">
 			<CAPTURE Name="APPLI_IMMOBILIERAnnonces_1" CtxtId="5" Techno="WEB" />
 			<SCRIPTS>
+				<SCRIPT Name="pAcueil_steps" Src="pAcueil_steps.js" />
 				<SCRIPT Name="PAP_steps" Src="PAP_steps.js" />
 			</SCRIPTS>
 			<CRITERE>
@@ -22,17 +23,17 @@
 				<STRUCTUREDON Name="PAP" />
 			</_DECLAREVAR>
 			<_ECRANS>
-				<PAGE Name="pAcceuil" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="90518ba1-c5d8-418a-88fe-6e3acda26af1">
+				<PAGE Name="pAccueil" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="90518ba1-c5d8-418a-88fe-6e3acda26af1">
 					<CRITERE>
 						<TITLE Scan="Full"><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP]]></TITLE>
 					</CRITERE>
 					<PATH><![CDATA[https://www.pap.fr/]]></PATH>
 					<OBJETS>
-						<OBJET Name="oFormRecherche" CtxtId="a560ee50-de1d-4fe8-aa40-b315cc969d44" MustExist="Y">
+						<OBJET Name="oFormRecherche" CtxtId="a560ee50-de1d-4fe8-aa40-b315cc969d44">
 							<CRITERE>
 								<TAG Name="FORM" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1">
-									<ATT Name="id">
-										<VALUE Scan="Full"><![CDATA[homepage_recherche_form]]></VALUE>
+									<ATT Name="action">
+										<VALUE Scan="Full"><![CDATA[/recherche]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
@@ -129,6 +130,15 @@
 								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R4R1R0R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[prix_max]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+						<OBJET Name="btRechercher" CtxtId="18a56d06-73c6-4373-a0ce-58016e97b699">
+							<CRITERE>
+								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R5R1R0R1">
+									<ATT Name="value">
+										<VALUE Scan="Full"><![CDATA[Rechercher]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
