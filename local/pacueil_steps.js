@@ -173,3 +173,33 @@ PAP.step({ stLieu: function(ev, sc, st) {
 			}, 500);
 	}, 200);
 }});
+
+/**
+ * STEP qsdqsdqsdsd
+ * Permet de récupère les données des maisons et créé un objet par maison.
+ * @step
+ * @param : ev {event object} - représente notre évenement
+ * @param : sc {scenario object} - représente notre objet scénario
+ * @param : st {step object} - représente notre objet step
+*/
+PAP.step({ qsdqsdqsdsd: function(ev, sc, st) {
+	ag2r.audit.startStep(sc.name,st.name);
+	//TODO Stoquer dans un Objet les annonces
+	var i =0;
+	//TODO 6 Prix, 4 annonces affichés
+	while(PAP.pResultats.oprix.i(i).exist() && 
+				PAP.pResultats.oDistance.i(i).exist() &&
+				PAP.pResultats.oPieces.i(i).exist() &&
+				PAP.pResultats.oChambres.i(i).exist() &&
+				PAP.pResultats.oSurface.i(i).exist()){// Affiche le nom des noeuds de l'arbre dans la console
+				ag2r.audit.log("[Prix] : " + PAP.pResultats.oprix.i(i).get());
+				ag2r.audit.log( "[Distance] : " + PAP.pResultats.oDistance.i(i).get()); 
+				ag2r.audit.log( "[Pieces] : " + PAP.pResultats.oPieces.i(i).get()); 
+				ag2r.audit.log( "[Chambres] : " + PAP.pResultats.oChambres.i(i).get()); 
+				ag2r.audit.log( "[Surface] : " + PAP.pResultats.oSurface.i(i).get());
+		i++;
+	}
+	ag2r.audit.endStep(sc.name,st.name);
+	sc.endStep();
+	return;
+}});

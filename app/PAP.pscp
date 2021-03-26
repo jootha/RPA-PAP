@@ -13,8 +13,9 @@
 		<APPLI Name="PAP" CtxtId="16dc8d06-e54f-4e97-844b-ce59e14853f4" Nature="WEB3" TechnoSDK="V3" Sync="250">
 			<CAPTURE Name="APPLI_IMMOBILIERAnnonces_1" CtxtId="5" Techno="WEB" />
 			<SCRIPTS>
+				<SCRIPT Name="pResultats_steps" Src="pResultats_steps.js" />
 				<SCRIPT Name="pAcueil_steps" Src="pAcueil_steps.js" />
-				<SCRIPT Name="PAP_steps" Src="PAP_steps.js" />
+				<SCRIPT Name="pResultats_steps" Src="pResultats_steps.js" />
 			</SCRIPTS>
 			<CRITERE>
 				<DOMAIN Scan="Full"><![CDATA[www.pap.fr]]></DOMAIN>
