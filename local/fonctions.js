@@ -35,3 +35,18 @@
 function selectPieces(){
 	return;
 }
+
+function Annonce(prix, distance, pieces, chambres, surface){
+	this.prix= prix;
+	this.distance= distance;
+	this.pieces = pieces;
+	this.chambres = chambres;
+	this.surface=surface;
+	this.log = function(){
+		ag2r.audit.log("[Prix] : " + this.prix);
+		ag2r.audit.log( "[Distance] : " + this.distance); 
+		ag2r.audit.log( "[Pieces] : " + this.pieces); 
+		ag2r.audit.log( "[Chambres] : " + this.chambres); 
+		ag2r.audit.log( "[Surface] : " + this.surface);
+	}
+}

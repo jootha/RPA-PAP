@@ -3,6 +3,10 @@
 	<BREAKPOINTS />
 	<BOOKMARKS />
 	<FINDHISTORY>
+		<FINDWHAT><![CDATA[pResultats]]></FINDWHAT>
+		<FINDWHAT><![CDATA[selectRoom]]></FINDWHAT>
+		<FINDWHAT><![CDATA[toString]]></FINDWHAT>
+		<FINDWHAT><![CDATA[annonces]]></FINDWHAT>
 		<FINDWHAT><![CDATA[pAcceuil]]></FINDWHAT>
 		<FINDWHAT><![CDATA[Form]]></FINDWHAT>
 		<FINDWHAT><![CDATA[key]]></FINDWHAT>
@@ -21,15 +25,19 @@
 	<DEBUGTRACEFINDHISTORY />
 	<OPENDOCS>
 		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pResultats']/OBJET[@Name='oSurface']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="193" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="1" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="10" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="20" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Entities']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="1" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Declarations']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="1" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Global']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="62" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="9" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
 		<DebugTester><![CDATA[]]></DebugTester>
 	</PROPERTIES>
-	<WATCHES />
+	<WATCHES>
+		<WATCH><![CDATA[data.annonces[i]]]></WATCH>
+	</WATCHES>
 	<APPLIFILTERS />
 	<EVENTFILTERS />
 	<WORKFLOW_MOSTUSED />

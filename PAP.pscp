@@ -76,6 +76,7 @@
 				<SCRIPT Name="Labels" Src="labels.js" />
 				<SCRIPT Name="Global" Src="global.js" />
 				<SCRIPT Name="scRecherche" Src="screcherche.js" IsWorkflowGenerated="Y" />
+				<SCRIPT Name="fonctions" Src="fonctions.js" />
 			</SCRIPTS>
 			<RESOURCES>
 				<!-- html resources -->
