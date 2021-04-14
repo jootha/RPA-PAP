@@ -129,6 +129,8 @@
 	<APPLICATIONS>
 		<include href="app/IMMOBILIERAnnonces.pscp" xpointer="xpointer(//APPLI)" />
 		<include href="app/PAP.pscp" xpointer="xpointer(//APPLI)" />
+		<include href="app/Classeur1Excel.pscp" xpointer="xpointer(//APPLI)" />
+		<include href="app/ResultatsPAPXlsxE.pscp" xpointer="xpointer(//APPLI)" />
 	</APPLICATIONS>
 	<CONTEXT Id="18f3cb21-3c56-42e3-afea-64730469671e" />
 </ConteXtorStudio>

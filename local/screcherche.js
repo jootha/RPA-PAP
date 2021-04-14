@@ -53,13 +53,21 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
 	
+	/*
 	sc.step(PAP.steps.stStartPAP);
 	sc.step(PAP.steps.stLoadForm);
 	sc.step(PAP.steps.stType);
 	sc.step(PAP.steps.stPieces);
 	sc.step(PAP.steps.stChambres);
 	sc.step(PAP.steps.stLieu);
-	sc.step(PAP.steps.stGetResults);
+	sc.step(PAP.steps.stGetResults);*/
+	
+	//TODO - Supprimer la partie archive
+	//TODO - Un fichier Output doit être généré a partir de init
+	//TODO - Fichier output doit avoir le resultat de recherche
+	sc.step(EXCEL.steps.stLoadData);
+	sc.step(EXCEL.steps.stReadData);
+	sc.step(EXCEL.steps.stCreateOutputFile);
 
  
 	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");

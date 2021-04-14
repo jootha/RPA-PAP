@@ -3,6 +3,13 @@
 	<BREAKPOINTS />
 	<BOOKMARKS />
 	<FINDHISTORY>
+		<FINDWHAT><![CDATA[excelFile]]></FINDWHAT>
+		<FINDWHAT><![CDATA[sc.data.]]></FINDWHAT>
+		<FINDWHAT><![CDATA[]]></FINDWHAT>
+		<FINDWHAT><![CDATA[pathFolder]]></FINDWHAT>
+		<FINDWHAT><![CDATA[.config.]]></FINDWHAT>
+		<FINDWHAT><![CDATA[.config]]></FINDWHAT>
+		<FINDWHAT><![CDATA[xlsx]]></FINDWHAT>
 		<FINDWHAT><![CDATA[pResultats]]></FINDWHAT>
 		<FINDWHAT><![CDATA[selectRoom]]></FINDWHAT>
 		<FINDWHAT><![CDATA[toString]]></FINDWHAT>
@@ -16,20 +23,19 @@
 		<FINDWHAT><![CDATA[POPUS]]></FINDWHAT>
 		<FINDWHAT><![CDATA[mamba]]></FINDWHAT>
 		<FINDWHAT><![CDATA[PAP]]></FINDWHAT>
-		<FINDWHAT><![CDATA[Mamba]]></FINDWHAT>
 		<REPLACEWITH><![CDATA[pAccueil]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[stLoadForm]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[Recherche]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[PAP]]></REPLACEWITH>
 	</FINDHISTORY>
-	<DEBUGTRACEFINDHISTORY />
+	<DEBUGTRACEFINDHISTORY>
+		<FINDWHAT><![CDATA[]]></FINDWHAT>
+	</DEBUGTRACEFINDHISTORY>
 	<OPENDOCS>
-		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pResultats']/OBJET[@Name='oSurface']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="20" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Entities']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="1" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Declarations']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="1" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='Global']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="62" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="9" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='EXCEL']/PAGE[@Name='pExcelFile']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="67" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="1" SearchPath="SCRIPTS/SCRIPT[@Name='excelCommon']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="71" SearchPath="SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
