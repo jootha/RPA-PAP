@@ -53,18 +53,17 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
 	
-	
+	/*
 	sc.step(PAP.steps.stStartPAP);
 	sc.step(PAP.steps.stLoadForm);
 	sc.step(PAP.steps.stType);
 	sc.step(PAP.steps.stPieces);
 	sc.step(PAP.steps.stChambres);
-	sc.step(PAP.steps.stLieu);
+	sc.step(PAP.steps.stLieu);*/
 	sc.step(PAP.steps.stGetResults);
 
 	sc.step(EXCEL.steps.stCreateOutputFile);
-	sc.step(PAP.steps.stSendMail);
-	
+	//sc.step(PAP.steps.stSendMail);
  
 	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");
 	ag2r.audit.startScenario();

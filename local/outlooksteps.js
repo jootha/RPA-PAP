@@ -20,7 +20,7 @@ PAP.step({ stSendMail: function(ev, sc, st) {
   ctx.outlook.mail.create({
 	  To:'adrien.lecomte.ext@ag2rlamondiale.fr',
 	  Cc :'adrien.lecomte@cgi.com.com',
-	  Subject:'[RPA-PAP] - Rapport recherche d\'appartements à Lille',
+	  Subject:'[RPA-PAP] - Rapport recherche de maisons à Lille',
 	  Body:'[Message automatique] - En PJ le rapport des appartements sur Lille'
 	});
 	ctx.outlook.mail.attach(0, sc.data.filetoSend);

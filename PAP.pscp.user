@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <USER>
-	<BREAKPOINTS />
+	<BREAKPOINTS>
+		<BREAKPOINT LineNumber="56" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="2312" Length="46"><![CDATA[ctx.excel.sheet.setCellColor((i + 2), ++k, 6);]]></BREAKPOINT>
+		<BREAKPOINT LineNumber="72" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="2828" Length="28"><![CDATA[ctx.excel.file.close(false);]]></BREAKPOINT>
+	</BREAKPOINTS>
 	<BOOKMARKS />
 	<FINDHISTORY>
+		<FINDWHAT><![CDATA[edditedPrix]]></FINDWHAT>
+		<FINDWHAT><![CDATA[legende]]></FINDWHAT>
+		<FINDWHAT><![CDATA[légende]]></FINDWHAT>
 		<FINDWHAT><![CDATA[data.annonces]]></FINDWHAT>
 		<FINDWHAT><![CDATA[annonces]]></FINDWHAT>
 		<FINDWHAT><![CDATA[excel]]></FINDWHAT>
-		<FINDWHAT><![CDATA[legende]]></FINDWHAT>
 		<FINDWHAT><![CDATA[legend]]></FINDWHAT>
 		<FINDWHAT><![CDATA[legned]]></FINDWHAT>
 		<FINDWHAT><![CDATA[orignialLegende]]></FINDWHAT>
@@ -21,8 +26,6 @@
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
 		<FINDWHAT><![CDATA[pathFolder]]></FINDWHAT>
 		<FINDWHAT><![CDATA[.config.]]></FINDWHAT>
-		<FINDWHAT><![CDATA[.config]]></FINDWHAT>
-		<FINDWHAT><![CDATA[xlsx]]></FINDWHAT>
 		<REPLACEWITH><![CDATA[ctx.excel]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[annonces]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[pAccueil]]></REPLACEWITH>
@@ -34,18 +37,19 @@
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
 	</DEBUGTRACEFINDHISTORY>
 	<OPENDOCS>
-		<OPENDOC LineNumber="58" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="189" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="32" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
 		<OPENDOC LineNumber="38" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="46" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pResultats']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="189" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="27" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
 		<DebugTester><![CDATA[]]></DebugTester>
 	</PROPERTIES>
 	<WATCHES>
-		<WATCH><![CDATA[sc.data.filetoSend]]></WATCH>
+		<WATCH><![CDATA[sc.data.annonces[i]]]></WATCH>
+		<WATCH><![CDATA[			 	sc.data.annonces[i].getPrix()<250.000){
+]]></WATCH>
 	</WATCHES>
 	<APPLIFILTERS />
 	<EVENTFILTERS />
