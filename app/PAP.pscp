@@ -193,15 +193,6 @@
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="btItemTitle" CtxtId="0222b464-ffc9-4662-a37c-3f9541a80025">
-							<CRITERE>
-								<TAG Name="A" Scope="All" CapturedPos="8.R0R3R2R0R3R0R6R0R2R0" Occurs="Y">
-									<ATT Name="class">
-										<VALUE Scan="Full"><![CDATA[item-title]]></VALUE>
-									</ATT>
-								</TAG>
-							</CRITERE>
-						</OBJET>
 						<OBJET Name="oSurface" CtxtId="29234dd6-f6b7-4f91-a739-42c4b088554d">
 							<CRITERE>
 								<TAG Name="LI" Scope="All" CapturedPos="10.R0R3R2R0R3R0R2R0R2R0R1R2" Occurs="Y">
@@ -211,8 +202,19 @@
 								</TAG>
 							</CRITERE>
 						</OBJET>
+						<OBJET Name="oAnnonce" CtxtId="67401c8a-b4ee-47c2-acbc-13bef8cf35a4">
+							<CRITERE>
+								<TAG Name="A" Scope="All" CapturedPos="10.R0R3R2R0R3R0R0R0R2R0" Occurs="Y">
+									<ATT Name="class">
+										<VALUE Scan="Full"><![CDATA[item-title]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
 					</OBJETS>
 					<CAPTURE Name="PAGE_VenteMaisonLille5_1115371_1" Comment="Vente maison Lille (59) 3 ou 4 pièces à partir de 3 chambres jusqu à 300.000 euros à partir de 85 m² | De Particulier à Particulier - PAP" CtxtId="10" Techno="WEB" Timestamp="08/04/2021 11:15:41" />
+					<CAPTURE Name="PAGE_VenteMaisonLille5_1101208_1" Comment="Vente maison Lille (59) 3 ou 4 pièces à partir de 3 chambres jusqu à 300.000 euros à partir de 85 m² | De Particulier à Particulier - PAP" CtxtId="19" Techno="WEB" Timestamp="16/04/2021 11:01:24" />
+					<CAPTURE Name="PAGE_VenteMaisonLille5_1059599_1" Comment="Vente maison Lille (59) 3 ou 4 pièces à partir de 3 chambres jusqu à 300.000 euros à partir de 85 m² | De Particulier à Particulier - PAP" CtxtId="18" Techno="WEB" Timestamp="16/04/2021 11:00:19" />
 				</PAGE>
 			</_ECRANS>
 			<PATH><![CDATA[https://www.pap.fr/]]></PATH>

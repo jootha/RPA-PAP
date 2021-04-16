@@ -185,7 +185,9 @@ PAP.step({ stGetResults: function(ev, sc, st) {
 	ag2r.audit.startStep(sc.name,st.name);
 	var i =0;
 	var data = sc.data;
-	data.annonces=[];
+	//tableau contenant la légende qui doit se trouver dans le formulaire
+	sc.data.annonces=[];
+	
 	ag2r.audit.log("[PLNG] " + "PAP.pResultats.oprix.i(0).exist()");
 	ctx.polling({
 		delay: 250,
@@ -201,17 +203,16 @@ PAP.step({ stGetResults: function(ev, sc, st) {
 				PAP.pResultats.oChambres.i(i).exist() &&
 				PAP.pResultats.oSurface.i(i).exist()) {// Affiche les informations trouvés dans la console dans la console
 
-				data.annonces.push(new Annonce(
-					PAP.pResultats.oprix.i(i).get(),
+				sc.data.annonces.push(new Annonce(
 					PAP.pResultats.oDistance.i(i).get(),
 					PAP.pResultats.oPieces.i(i).get(),
 					PAP.pResultats.oChambres.i(i).get(),
-					PAP.pResultats.oSurface.i(i).get()));
-				data.annonces[i].log();
+					PAP.pResultats.oSurface.i(i).get(),
+					PAP.pResultats.oprix.i(i).get(),
+					PAP.pResultats.oAnnonce.i(i).getAttribute('href')));
+				sc.data.annonces[i].log();
 				i++;
-		}
-		ag2r.audit.log("Annonces trouvées : "+data.annonces.length);
-					
+		}					
 		ag2r.audit.endStep(sc.name,st.name);
 		sc.endStep();
 		return;	

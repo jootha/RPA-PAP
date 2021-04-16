@@ -59,6 +59,7 @@
 				<SCRIPT Name="Galaxy WS" Folder="Framework" Src="%sdk%\lib\galaxy\galaxy.ws.js" />
 				<SCRIPT Name="Ctx Galaxy" Src="%sdk%\lib\galaxy\galaxy.m2m.js" Folder="Framework" />
 				<SCRIPT Name="Excel" Comment="Microsoft Excel Integration" Folder="Microsoft Office" Src="%sdk%\lib\office\excel.js" />
+				<SCRIPT Name="Outlook" Comment="Microsoft Outlook Integration" Folder="Microsoft Office" Src="%sdk%\lib\office\outlook.js" />
 				<SCRIPT Name="SAP UI5" Src="%sdk%\lib\sapui5\sapui5.js" Folder="Framework" />
 				<!-- Libraries AG2R -->
 				<SCRIPT Name="AG2R Core" Src="ag2r_lib\ag2r_lib.js" Folder="Libraries_AG2R" />
@@ -77,6 +78,7 @@
 				<SCRIPT Name="Global" Src="global.js" />
 				<SCRIPT Name="scRecherche" Src="screcherche.js" IsWorkflowGenerated="Y" />
 				<SCRIPT Name="fonctions" Src="fonctions.js" />
+				<SCRIPT Name="outlookSteps" Src="outlookSteps.js" />
 			</SCRIPTS>
 			<RESOURCES>
 				<!-- html resources -->

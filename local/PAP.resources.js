@@ -28,8 +28,8 @@ PAP.pResultats.oDistance = PAP.pResultats.addItem('oDistance', {"occurs":1});
 PAP.pResultats.oprix = PAP.pResultats.addItem('oprix', {"occurs":1});
 PAP.pResultats.oPieces = PAP.pResultats.addItem('oPieces', {"occurs":1});
 PAP.pResultats.oChambres = PAP.pResultats.addItem('oChambres', {"occurs":1});
-PAP.pResultats.btItemTitle = PAP.pResultats.addItem('btItemTitle', {"occurs":1});
 PAP.pResultats.oSurface = PAP.pResultats.addItem('oSurface', {"occurs":1});
+PAP.pResultats.oAnnonce = PAP.pResultats.addItem('oAnnonce', {"occurs":1});
 
 
 var EXCEL = ctx.addApplication('EXCEL', {"nature":"UIAUTOMATION","path":"C:\\Program Files (x86)\\Microsoft Office\\Root\\Office16\\EXCEL.EXE"});

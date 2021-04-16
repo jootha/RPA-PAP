@@ -96,6 +96,11 @@
 				</PAGE>
 			</_ECRANS>
 			<PATH><![CDATA[C:\Program Files (x86)\Microsoft Office\Root\Office16\EXCEL.EXE]]></PATH>
+			<ACTIONS />
+			<EVENTS />
+			<SCENARII>
+				<Steps />
+			</SCENARII>
 		</APPLI>
 	</APPLICATIONS>
 </ConteXtorStudio>
