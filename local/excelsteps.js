@@ -19,6 +19,7 @@ EXCEL.step({ stCreateOutputFile: function(ev, sc, st) {
 	try {
 	ctx.excel.file.open(pathFolder + '\\' + "init"+excelFile);
 	}catch (ex) {
+		//TODO ag2R.errors.error0X 
 		ctx.excel.file.open(pathFolder + '\\' + "init"+excelFile);
 		sc.endScenario();
 		return ;
@@ -58,7 +59,7 @@ EXCEL.step({ stCreateOutputFile: function(ev, sc, st) {
 	try{
 		ctx.excel.file.saveAs(sc.data.filetoSend);
 	}catch (ex) {
-		throw new Error(e.error.Fail, 'Erreur sauvegarde de '+"C:\\Temp\\myExcelFileSavedAs.xlsx");
+		throw new Error(e.error.Fail, 'Erreur sauvegarde de '+"C:\\Temp\\myExcelFileSavedAs.xlsx");//TODO changer message err
 		sc.endScenario();
 		return ;
 	}

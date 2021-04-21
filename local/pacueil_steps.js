@@ -61,6 +61,7 @@ PAP.step({ stLoadForm: function(ev, sc, st) {
  * @param : st {step object} - représente notre objet step
 */
 PAP.step({ stType: function(ev, sc, st) {
+	//TODO Vérifier que le champs selectionné est correct
 	ag2r.audit.startStep(sc.name,st.name);
 	PAP.pAccueil.iTypes.clickMouse();
 	ag2r.audit.log("[Click] Types ");

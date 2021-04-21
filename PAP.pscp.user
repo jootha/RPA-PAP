@@ -3,6 +3,8 @@
 	<BREAKPOINTS />
 	<BOOKMARKS />
 	<FINDHISTORY>
+		<FINDWHAT><![CDATA[selectRoom]]></FINDWHAT>
+		<FINDWHAT><![CDATA[selectPieces]]></FINDWHAT>
 		<FINDWHAT><![CDATA[edditedPrix]]></FINDWHAT>
 		<FINDWHAT><![CDATA[legende]]></FINDWHAT>
 		<FINDWHAT><![CDATA[légende]]></FINDWHAT>
@@ -21,8 +23,6 @@
 		<FINDWHAT><![CDATA[excelFile]]></FINDWHAT>
 		<FINDWHAT><![CDATA[sc.data.]]></FINDWHAT>
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
-		<FINDWHAT><![CDATA[pathFolder]]></FINDWHAT>
-		<FINDWHAT><![CDATA[.config.]]></FINDWHAT>
 		<REPLACEWITH><![CDATA[ctx.excel]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[annonces]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[pAccueil]]></REPLACEWITH>
@@ -34,14 +34,14 @@
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
 	</DEBUGTRACEFINDHISTORY>
 	<OPENDOCS>
-		<OPENDOC LineNumber="58" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="169" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="6" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="63" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="31" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="9" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='outlookSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="214" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='AG2R Audit']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pAccueil']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="7" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelCommon']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="15" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="24" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="16" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="42" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="40" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="23" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='outlookSteps']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>

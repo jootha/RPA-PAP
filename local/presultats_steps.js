@@ -29,6 +29,7 @@ PAP.step({ stGetResults: function(ev, sc, st) {
 				PAP.pResultats.oSurface.i(i).exist()) {// Affiche les informations trouvés dans la console dans la console
 
 					sc.data.annonces.push(new Annonce(
+						//TODO mettre regex dans variable
 						PAP.pResultats.oDistance.i(i).get().replace(/[^0-9\.]+/g, ""),
 						PAP.pResultats.oPieces.i(i).get().replace(/[^0-9\.]+/g, ""),
 						PAP.pResultats.oChambres.i(i).get().replace(/[^0-9\.]+/g, ""),
@@ -37,8 +38,8 @@ PAP.step({ stGetResults: function(ev, sc, st) {
 						PAP.pResultats.oAnnonce.i(i).getAttribute('href')));
 					sc.data.annonces[i].log();
 					i++;
-		}					
-		ag2r.audit.endStep(sc.name,st.name);
+		}					//TODO Tri excel dans robot IJC
+		ag2r.audit.endStep(sc.name,st.name, "annonces récupérées");
 		sc.endStep();
 		return;	
 		},
