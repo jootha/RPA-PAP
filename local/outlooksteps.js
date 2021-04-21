@@ -18,8 +18,8 @@ PAP.step({ stSendMail: function(ev, sc, st) {
 		return ;
 	}
   ctx.outlook.mail.create({
-	  To:'adrien.lecomte.ext@ag2rlamondiale.fr',
-	  Cc :'adrien.lecomte@cgi.com.com',
+	  To:'Alexandre.PIGNON.ext@ag2rlamondiale.fr',
+	  Cc :'adrien.lecomte.ext@ag2rlamondiale.fr; Adrien.MARTIGNOLES.ext@ag2rlamondiale.fr',
 	  Subject:'[RPA-PAP] - Rapport recherche de maisons à Lille',
 	  Body:'[Message automatique] - En PJ le rapport des appartements sur Lille'
 	});

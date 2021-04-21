@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <USER>
-	<BREAKPOINTS>
-		<BREAKPOINT LineNumber="56" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="2312" Length="46"><![CDATA[ctx.excel.sheet.setCellColor((i + 2), ++k, 6);]]></BREAKPOINT>
-		<BREAKPOINT LineNumber="72" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="2828" Length="28"><![CDATA[ctx.excel.file.close(false);]]></BREAKPOINT>
-	</BREAKPOINTS>
+	<BREAKPOINTS />
 	<BOOKMARKS />
 	<FINDHISTORY>
 		<FINDWHAT><![CDATA[edditedPrix]]></FINDWHAT>
@@ -37,19 +34,23 @@
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
 	</DEBUGTRACEFINDHISTORY>
 	<OPENDOCS>
-		<OPENDOC LineNumber="32" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="38" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="189" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="27" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="58" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="169" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="6" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="63" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="31" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="9" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='outlookSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="214" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='AG2R Audit']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
 		<DebugTester><![CDATA[]]></DebugTester>
 	</PROPERTIES>
 	<WATCHES>
-		<WATCH><![CDATA[sc.data.annonces[i]]]></WATCH>
 		<WATCH><![CDATA[			 	sc.data.annonces[i].getPrix()<250.000){
 ]]></WATCH>
+		<WATCH><![CDATA[sc.data.annonces[i]]]></WATCH>
 	</WATCHES>
 	<APPLIFILTERS />
 	<EVENTFILTERS />

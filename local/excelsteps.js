@@ -62,6 +62,8 @@ EXCEL.step({ stCreateOutputFile: function(ev, sc, st) {
 		sc.endScenario();
 		return ;
 	}
+	
+	ag2r.audit.log('[INFO] Close Excel File');
 	ctx.excel.file.close(false);
 	ctx.excel.end();
 	

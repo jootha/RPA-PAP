@@ -25,8 +25,7 @@
 			<_ECRANS>
 				<PAGE Name="pAccueil" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="90518ba1-c5d8-418a-88fe-6e3acda26af1">
 					<CRITERE>
-						<TITLE Scan="Full"><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP]]></TITLE>
-						<URL Scan="Full"><![CDATA[https://www.pap.fr/]]></URL>
+						<TITLE Scan="start-with"><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier]]></TITLE>
 					</CRITERE>
 					<PATH><![CDATA[https://www.pap.fr/]]></PATH>
 					<OBJETS>
