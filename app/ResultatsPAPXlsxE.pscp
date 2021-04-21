@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConteXtorStudio Version="StudioReco V1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="XsdStudio.xsd">
+	<PROCESSUS>
+		<PROCESS Name="GLOBAL" Key="NoKey" Comment="Global Processus">
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="GLOBAL" />
+			</_DECLAREVAR>
+			<SCRIPTS />
+			<RESOURCES />
+		</PROCESS>
+	</PROCESSUS>
+	<APPLICATIONS>
+		<APPLI Name="EXCEL" CtxtId="705cc443-c7fd-4a5f-85ea-d535eabbfdbc" Nature="UIAUTOMATION" TechnoSDK="V3" Sync="0" PendingDelay="0">
+			<CAPTURE Name="APPLI_ResultatsPAPXlsxE_1" CtxtId="3" Techno="UIAutomation" />
+			<SCRIPTS>
+				<SCRIPT Name="excelSteps" Src="excelSteps.js" />
+				<SCRIPT Name="excelCommon" Src="excelCommon.js" />
+			</SCRIPTS>
+			<CRITERE>
+				<TITLE Scan="Full"><![CDATA[resultatsPAP.xlsx - Excel]]></TITLE>
+			</CRITERE>
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="EXCEL" />
+			</_DECLAREVAR>
+			<_ECRANS>
+				<PAGE Name="pExcelFile" Comment="Window - resultatsPAP.xlsx - Excel" CtxtId="40a5f983-0aec-4634-aeb6-7e84319eaabc" SubpagesType="Multiple" RefreshMode="Window">
+					<CRITERE>
+						<Name Scan="Full"><![CDATA[resultatsPAP.xlsx - Excel]]></Name>
+					</CRITERE>
+					<TRACK_EVENTS>
+						<TRACK_EVENT Name="REFRESH(WINDOWOPENED(DESCENDANTS))" />
+					</TRACK_EVENTS>
+					<OBJETS>
+						<OBJET Name="oLocalite" CtxtId="b17a71c3-7953-407d-9f86-f82b041fc67c">
+							<CRITERE>
+								<TAG Name="HeaderItem" Scope="All" CapturedPos="16.R0R5R0R3R1R0R16R0">
+									<ATT Name="Name">
+										<VALUE Scan="Full"><![CDATA["A" 1]]></VALUE>
+									</ATT>
+									<ATT Name="Value">
+										<VALUE Scan="Full"><![CDATA[Localité]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+						<OBJET Name="oPieces" CtxtId="4d6630fb-1cce-49a9-9f32-316bc3dff717">
+							<CRITERE>
+								<TAG Name="HeaderItem" Scope="All" CapturedPos="16.R0R5R0R3R1R0R16R1">
+									<ATT Name="Name">
+										<VALUE Scan="Full"><![CDATA["B" 1]]></VALUE>
+									</ATT>
+									<ATT Name="Value">
+										<VALUE Scan="Full"><![CDATA[Pièces]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+						<OBJET Name="oChambres" CtxtId="80e1c3a4-8fb6-4b8a-8bc4-28d598648f29">
+							<CRITERE>
+								<TAG Name="HeaderItem" Scope="All" CapturedPos="16.R0R5R0R3R1R0R16R2">
+									<ATT Name="Name">
+										<VALUE Scan="Full"><![CDATA["C" 1]]></VALUE>
+									</ATT>
+									<ATT Name="Value">
+										<VALUE Scan="Full"><![CDATA[Chambres]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+						<OBJET Name="oSurface" CtxtId="e6703014-eae5-48d9-95b7-209b37763b4f">
+							<CRITERE>
+								<TAG Name="HeaderItem" Scope="All" CapturedPos="16.R0R5R0R3R1R0R16R3">
+									<ATT Name="Name">
+										<VALUE Scan="Full"><![CDATA["D" 1]]></VALUE>
+									</ATT>
+									<ATT Name="Value">
+										<VALUE Scan="Full"><![CDATA[Surface]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+						<OBJET Name="oPrix" CtxtId="b0622307-0ca1-41f4-9eda-931cf215761b">
+							<CRITERE>
+								<TAG Name="HeaderItem" Scope="All" CapturedPos="16.R0R5R0R3R1R0R16R4">
+									<ATT Name="Name">
+										<VALUE Scan="Full"><![CDATA["E" 1]]></VALUE>
+									</ATT>
+									<ATT Name="Value">
+										<VALUE Scan="Full"><![CDATA[Prix]]></VALUE>
+									</ATT>
+								</TAG>
+							</CRITERE>
+						</OBJET>
+					</OBJETS>
+					<CAPTURE Name="PAGE_WindowResultatsPAP_1523103_1" Comment="Window - resultatsPAP.xlsx - Excel" CtxtId="16" Techno="UIAutomation" CapturedPos="16.R0" Timestamp="14/04/2021 15:23:36" MaskRectangle="0|0|1295|735" />
+				</PAGE>
+			</_ECRANS>
+			<PATH><![CDATA[C:\Program Files (x86)\Microsoft Office\Root\Office16\EXCEL.EXE]]></PATH>
+			<ACTIONS />
+			<EVENTS />
+			<SCENARII>
+				<Steps />
+			</SCENARII>
+		</APPLI>
+	</APPLICATIONS>
+</ConteXtorStudio>
