@@ -12,9 +12,13 @@
 		<REPLACEWITH><![CDATA[PAP]]></REPLACEWITH>
 	</FINDHISTORY>
 	<DEBUGTRACEFINDHISTORY />
-	<OPENDOCS />
+	<OPENDOCS>
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pAcceuil']/OBJET[@Name='iNb_pieces']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="1" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scPAP']" Offset="0" Length="0" />
+	</OPENDOCS>
 	<PROPERTIES>
 		<DebugTester><![CDATA[]]></DebugTester>
+		<CurPerspective><![CDATA[2]]></CurPerspective>
 	</PROPERTIES>
 	<WATCHES />
 	<APPLIFILTERS />

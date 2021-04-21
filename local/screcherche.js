@@ -9,7 +9,7 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	sc.onTimeout(600000, function(sc, st) {
 		ag2r.audit.failStep(GLOBAL.labels.scenarios.scName, st.name, ag2r.errors.error01 + st.name);
 		GLOBAL.data.errors.push(ag2r.errors.error01 + st.name);
-		ag2r.ihm.close();
+		ag2r.ihm.close();'('
 
 		var traceFolder = ((ctx.options.trace.autoRecordingStarted || ctx.options.trace.frameworkTraces) ? ctx.options.traceFolderRecording : ctx.options.traceFolder);		
 		ctx.screenshot({File : ctx.options.path.log + '\\' + traceFolder + '\\' + ag2r.audit.dateNow + '.png'});		
@@ -53,7 +53,17 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
 	
+	
 	sc.step(PAP.steps.stStartPAP);
+	sc.step(PAP.steps.stLoadForm);
+	sc.step(PAP.steps.stType);
+	sc.step(PAP.steps.stPieces);
+	sc.step(PAP.steps.stChambres);
+	sc.step(PAP.steps.stLieu);
+	
+	sc.step(PAP.steps.stGetResults);
+	sc.step(EXCEL.steps.stCreateOutputFile);
+	sc.step(PAP.steps.stSendMail);
  
 	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");
 	ag2r.audit.startScenario();
