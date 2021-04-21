@@ -1,10 +1,10 @@
-        <APPLI Techno="WEB" RatioX="100" RatioY="100" Name="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" ProcessName="CHROME" ParamName="https://www.pap.fr/" ParentTree="">
-            <PROPERTIES>
-                <DOMAIN><![CDATA[www.pap.fr]]></DOMAIN>
-                <URL><![CDATA[https://www.pap.fr/]]></URL>
-                <TITLE><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP]]></TITLE>
-                <MAINFRAME>true</MAINFRAME>
-                <CX>1903</CX>
-                <CY>6471</CY>
-            </PROPERTIES>
-        </APPLI>
+<APPLI Techno="WEB" RatioX="100" RatioY="100" Name="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" ProcessName="CHROME" ParamName="https://www.pap.fr/" ParentTree="">
+    <PROPERTIES>
+        <DOMAIN><![CDATA[www.pap.fr]]></DOMAIN>
+        <URL><![CDATA[https://www.pap.fr/]]></URL>
+        <TITLE><![CDATA[IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP]]></TITLE>
+        <MAINFRAME>true</MAINFRAME>
+        <CX>1903</CX>
+        <CY>6471</CY>
+    </PROPERTIES>
+</APPLI>

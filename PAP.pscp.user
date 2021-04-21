@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<USER>
+	<BREAKPOINTS />
+	<BOOKMARKS />
+	<FINDHISTORY>
+		<FINDWHAT><![CDATA[edditedPrix]]></FINDWHAT>
+		<FINDWHAT><![CDATA[legende]]></FINDWHAT>
+		<FINDWHAT><![CDATA[légende]]></FINDWHAT>
+		<FINDWHAT><![CDATA[data.annonces]]></FINDWHAT>
+		<FINDWHAT><![CDATA[annonces]]></FINDWHAT>
+		<FINDWHAT><![CDATA[excel]]></FINDWHAT>
+		<FINDWHAT><![CDATA[legend]]></FINDWHAT>
+		<FINDWHAT><![CDATA[legned]]></FINDWHAT>
+		<FINDWHAT><![CDATA[orignialLegende]]></FINDWHAT>
+		<FINDWHAT><![CDATA[original]]></FINDWHAT>
+		<FINDWHAT><![CDATA[mail]]></FINDWHAT>
+		<FINDWHAT><![CDATA[throw]]></FINDWHAT>
+		<FINDWHAT><![CDATA[send]]></FINDWHAT>
+		<FINDWHAT><![CDATA[Cells]]></FINDWHAT>
+		<FINDWHAT><![CDATA[table]]></FINDWHAT>
+		<FINDWHAT><![CDATA[excelFile]]></FINDWHAT>
+		<FINDWHAT><![CDATA[sc.data.]]></FINDWHAT>
+		<FINDWHAT><![CDATA[]]></FINDWHAT>
+		<FINDWHAT><![CDATA[pathFolder]]></FINDWHAT>
+		<FINDWHAT><![CDATA[.config.]]></FINDWHAT>
+		<REPLACEWITH><![CDATA[ctx.excel]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[annonces]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[pAccueil]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[stLoadForm]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[Recherche]]></REPLACEWITH>
+		<REPLACEWITH><![CDATA[PAP]]></REPLACEWITH>
+	</FINDHISTORY>
+	<DEBUGTRACEFINDHISTORY>
+		<FINDWHAT><![CDATA[]]></FINDWHAT>
+	</DEBUGTRACEFINDHISTORY>
+	<OPENDOCS>
+		<OPENDOC LineNumber="58" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="169" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="6" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="63" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="31" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="9" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='outlookSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="214" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='AG2R Audit']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']" Offset="0" Length="0" />
+	</OPENDOCS>
+	<PROPERTIES>
+		<CurPerspective><![CDATA[2]]></CurPerspective>
+		<DebugTester><![CDATA[]]></DebugTester>
+	</PROPERTIES>
+	<WATCHES>
+		<WATCH><![CDATA[			 	sc.data.annonces[i].getPrix()<250.000){
+]]></WATCH>
+		<WATCH><![CDATA[sc.data.annonces[i]]]></WATCH>
+	</WATCHES>
+	<APPLIFILTERS />
+	<EVENTFILTERS />
+	<WORKFLOW_MOSTUSED />
+</USER>

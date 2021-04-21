@@ -9,7 +9,7 @@
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
-    <c:SnippetActivity ActivityType="SnippetActivity" CtxtId="28afe2af-3fe6-460b-9180-adda73de48ff" DisplayName="Custom" sap2010:WorkflowViewState.IdRef="SnippetActivity_1">
+    <c:SnippetActivity ActivityType="SnippetActivity" CtxtId="2d4b3e6b-f9cb-4ec8-9a1a-174a1b279b97" DisplayName="Custom" sap2010:WorkflowViewState.IdRef="SnippetActivity_1">
       <c:SnippetActivity.CustomData>
         <x:String x:Key="SnippetId">comment_2</x:String>
         <x:String x:Key="Description">Describe functionality to be implemented in JavaScript later in the project.</x:String>
@@ -18,7 +18,7 @@
   </FlowStep>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="SnippetActivity_1" sap:VirtualizedContainerService.HintSize="154,26">
+      <sap2010:ViewStateData Id="SnippetActivity_1" sap:VirtualizedContainerService.HintSize="154,26.6666666666667">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -28,8 +28,8 @@
       <sap2010:ViewStateData Id="FlowStep_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">173,127</av:Point>
-            <av:Size x:Key="ShapeSize">154,26</av:Size>
+            <av:Point x:Key="ShapeLocation">143,177</av:Point>
+            <av:Size x:Key="ShapeSize">154,26.6666666666667</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
@@ -38,8 +38,8 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-            <av:Size x:Key="ShapeSize">60,75</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 250,107.5 250,127</av:PointCollection>
+            <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 220,107.5 220,177</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>

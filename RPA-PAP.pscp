@@ -113,7 +113,9 @@
 		</PROCESS>
 		<PROCESS Name="POPUPS" CtxtId="3a8b4ac1-b340-4639-9f07-61cde0ea9055" Nature="POPUP">
 			<SCRIPTS />
-			<SCENARII />
+			<SCENARII>
+				<Steps />
+			</SCENARII>
 			<ACTIONS />
 			<EVENTS />
 			<_DECLAREVAR>
