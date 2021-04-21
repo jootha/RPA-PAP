@@ -1,0 +1,6 @@
+﻿<APPLI Techno="UIAutomation" Name="APPLI_ResultatsPAPXlsxE_1" ParamName="resultatsPAP.xlsx - Excel">
+	<PROPERTIES>
+		<EXE>EXCEL.EXE</EXE>
+		<TITLE>resultatsPAP.xlsx - Excel</TITLE>
+	</PROPERTIES>
+</APPLI>
