@@ -14,7 +14,6 @@ PAP.pAccueil.oFormRecherche = PAP.pAccueil.addItem('oFormRecherche');
 PAP.pAccueil.oAchat = PAP.pAccueil.addItem('oAchat');
 PAP.pAccueil.iLieu = PAP.pAccueil.addItem('iLieu');
 PAP.pAccueil.iTypes = PAP.pAccueil.addItem('iTypes');
-PAP.pAccueil.oMaison = PAP.pAccueil.addItem('oMaison');
 PAP.pAccueil.iNb_pieces = PAP.pAccueil.addItem('iNb_pieces');
 PAP.pAccueil.o3Pieces = PAP.pAccueil.addItem('o3Pieces');
 PAP.pAccueil.o4Pieces = PAP.pAccueil.addItem('o4Pieces');

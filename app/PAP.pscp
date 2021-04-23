@@ -29,54 +29,45 @@
 					</CRITERE>
 					<PATH><![CDATA[https://www.pap.fr/]]></PATH>
 					<OBJETS>
-						<OBJET Name="oFormRecherche" CtxtId="a560ee50-de1d-4fe8-aa40-b315cc969d44">
+						<OBJET Name="oFormRecherche" CtxtId="fd638713-21e5-4188-a02a-0c8e5d7a4cdb">
 							<CRITERE>
-								<TAG Name="FORM" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1">
+								<TAG Name="FORM" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1">
 									<ATT Name="action">
 										<VALUE Scan="Full"><![CDATA[/recherche]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="oAchat" CtxtId="1fbaa01f-5e83-4f39-a7fd-44cc89485007">
+						<OBJET Name="oAchat" CtxtId="fc12fe1d-c130-49ce-ad02-2e078a9e10fd">
 							<CRITERE>
-								<TAG Name="DIV" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R0R0R0">
+								<TAG Name="DIV" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R0R0R0">
 									<ATT Name="Text">
 										<VALUE Scan="Full"><![CDATA[Achat]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="iLieu" CtxtId="68ce214d-f725-4cf0-9b86-b04968094ba7">
+						<OBJET Name="iLieu" CtxtId="91beb45d-c41b-434f-96cf-1e81eab5d0f0">
 							<CRITERE>
-								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R1R1R0R0">
-									<ATT Name="placeholder">
+								<TAG Name="UL" Scope="All" CapturedPos="24.R0R5R1R0R0R1R0R0R1R1R1">
+									<ATT Name="Text">
 										<VALUE Scan="Full"><![CDATA[Lieu(x)]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="iTypes" CtxtId="db5f051b-9372-4d9f-841d-e6f8a39bca63">
+						<OBJET Name="iTypes" CtxtId="e18e57b6-f243-4a45-904e-7f5622d12c32">
 							<CRITERE>
-								<TAG Name="SELECT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R2R1R0">
+								<TAG Name="SELECT" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R2R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[typesbien]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="oMaison" CtxtId="881b086c-69ad-48c3-a496-0a4ebfa9e1ea">
+						<OBJET Name="iNb_pieces" CtxtId="fda4ca4f-4fc0-40f0-817d-d3612ce20c72">
 							<CRITERE>
-								<TAG Name="OPTION" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R2R1R0R0">
-									<ATT Name="value">
-										<VALUE Scan="Full"><![CDATA[maison]]></VALUE>
-									</ATT>
-								</TAG>
-							</CRITERE>
-						</OBJET>
-						<OBJET Name="iNb_pieces" CtxtId="a5adb5f0-3fe4-488f-8eeb-3a2a8fedebef">
-							<CRITERE>
-								<TAG Name="SELECT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R3R0R0R1R0">
+								<TAG Name="SELECT" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R3R0R0R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[nb_pieces]]></VALUE>
 									</ATT>
@@ -107,27 +98,27 @@
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="iNbChambres" CtxtId="e7b96824-b420-4550-8b92-bee2cb213fc9">
+						<OBJET Name="iNbChambres" CtxtId="54a88392-e2da-46ec-b6b0-0ae4eea3a7e9">
 							<CRITERE>
-								<TAG Name="SELECT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R3R1R0R1R0">
+								<TAG Name="SELECT" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R3R1R0R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[nb_chambres]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="iSurfaceMin" CtxtId="63a2cb5f-b6ec-4b8a-a474-6f439fb1c279">
+						<OBJET Name="iSurfaceMin" CtxtId="d419fc73-eb92-41e6-a275-f5362eecac5b">
 							<CRITERE>
-								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R4R0R0R1R0">
+								<TAG Name="INPUT" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R4R0R0R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[surface_min]]></VALUE>
 									</ATT>
 								</TAG>
 							</CRITERE>
 						</OBJET>
-						<OBJET Name="iPrixMax" CtxtId="5426e87d-1db3-4770-a581-1afef4b5e19f">
+						<OBJET Name="iPrixMax" CtxtId="c20dcde4-4d7b-4e32-85ec-64b9e6957dfd">
 							<CRITERE>
-								<TAG Name="INPUT" Scope="All" CapturedPos="4.R0R5R1R0R0R1R0R0R1R4R1R0R1R0">
+								<TAG Name="INPUT" Scope="All" CapturedPos="23.R0R5R1R0R0R1R0R0R1R4R1R0R1R0">
 									<ATT Name="id">
 										<VALUE Scan="Full"><![CDATA[prix_max]]></VALUE>
 									</ATT>
@@ -144,7 +135,7 @@
 							</CRITERE>
 						</OBJET>
 					</OBJETS>
-					<CAPTURE Name="PAGE_IMMOBILIERAnnonces_1043157_1" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="4" Techno="WEB" Timestamp="24/03/2021 10:43:22" />
+					<CAPTURE Name="PAGE_IMMOBILIERAnnonces_1001091_1" Comment="IMMOBILIER - Annonces immobilières | De Particulier à Particulier - PAP" CtxtId="24" Techno="WEB" Timestamp="23/04/2021 10:01:17" />
 				</PAGE>
 				<PAGE Name="pResultats" Comment="Vente maison Lille (59) 3 ou 4 pièces à partir de 3 chambres jusqu à 300.000 euros à partir de 85 m² | De Particulier à Particulier - PAP" CtxtId="2583c7eb-0e90-4f23-8fc0-fce623c64ec6">
 					<CRITERE>
