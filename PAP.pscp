@@ -79,6 +79,8 @@
 				<SCRIPT Name="scRecherche" Src="screcherche.js" IsWorkflowGenerated="Y" />
 				<SCRIPT Name="fonctions" Src="fonctions.js" />
 				<SCRIPT Name="outlookSteps" Src="outlookSteps.js" />
+				<SCRIPT Name="variables" Src="variables.js" />
+				<SCRIPT Name="recuperationVariables" Src="recuperationVariables.js" />
 			</SCRIPTS>
 			<RESOURCES>
 				<!-- html resources -->

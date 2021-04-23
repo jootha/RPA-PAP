@@ -1,4 +1,20 @@
 ﻿/**
+ * STEP stInitData
+ * Permet de initialise les données
+ * @step
+ * @param : ev {event object} - représente notre évenement
+ * @param : sc {scenario object} - représente notre objet scénario
+ * @param : st {step object} - représente notre objet step
+*/
+PAP.step({ stInitData: function(ev, sc, st) {
+	sc.data.nberrResultats=0;//nombre d'erreurs de chargements de la page pResultats
+	sc.data.nberrAcc=0;//nombre d'erreurs de chargements de la page pAcceuil
+	ctx.wait(function(ev){
+		sc.endStep();
+		return;
+	}, 500);
+}});
+/**
  * STEP stStartPAP
  * Permet de lancer l'application PAP
  * @step
@@ -8,9 +24,8 @@
 */
 PAP.step({ stStartPAP: function(ev, sc, st) {
 	ag2r.audit.startStep(sc.name,st.name);
-	sc.data.PAPurl= "https://www.pap.fr/";
 	ctx.shellexec('chrome', sc.data.PAPurl, undefined, e.launchFlag.Hide);
-
+//TODO reconnaissance des elements de pAcceuil capricieux
 	ctx.wait(function(ev){
 		ag2r.audit.endStep(sc.name,st.name);
 		sc.endStep();
@@ -36,7 +51,7 @@ PAP.step({ stLoadForm: function(ev, sc, st) {
 			ag2r.audit.log("[PLNG] test n°" + index + " - " + PAP.pAccueil.oAchat.exist());
 			return PAP.pAccueil.oAchat.exist(); 
 		},
-		done: function() { 
+		done: function() {
 			PAP.pAccueil.oAchat.click();
 			PAP.pAccueil.wait(function(ev) {
 				ag2r.audit.log("[WAIT] " + st.name + " - " + ev.appliName + "." + ev.pageName + ".wait");
@@ -47,7 +62,16 @@ PAP.step({ stLoadForm: function(ev, sc, st) {
 		},
 		fail: function() {
 			ag2r.audit.log("[ERROR] " + ag2r.errors.error04, e.logIconType.Error);
-			ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error04);
+			
+			//Si la page ne se charge pas correctement, on relance la page jusqu'à 3 fois
+			if(sc.data.nberrAcc>=3){
+				ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error04);
+			}else {	
+				sc.data.nberrAcc++;
+				ag2r.audit.log("[Info] nberrAcc = "+sc.data.nberrAcc);
+				sc.endStep(PAP.steps.stStartPAP);
+				return;
+			}
 		}
 	});
 }});
@@ -61,18 +85,12 @@ PAP.step({ stLoadForm: function(ev, sc, st) {
  * @param : st {step object} - représente notre objet step
 */
 PAP.step({ stType: function(ev, sc, st) {
-	//TODO Vérifier que le champs selectionné est correct
 	ag2r.audit.startStep(sc.name,st.name);
 	PAP.pAccueil.iTypes.clickMouse();
 	ag2r.audit.log("[Click] Types ");
 	PAP.pAccueil.wait(function(ev) {
 		ag2r.audit.log("[WAIT] " + st.name + " - " + ev.appliName + "." + ev.pageName + ".wait");			
-		for (var index = 0; index < 16; index++) {
-			ctx.keyStroke(e.key.Up); 
-			ag2r.audit.log("[key] Up");
-		}
-		ctx.keyStroke(e.key.Enter);
-		ag2r.audit.log("[key] Enter");//selectonne Maison
+		selectionItem(16);
 		ctx.keyStroke(e.key.Esc);
 		ag2r.audit.log("[key] Esc");//Ferme le menu contextuel
 		
@@ -95,16 +113,8 @@ PAP.step({ stPieces: function(ev, sc, st) {
 	ag2r.audit.log("[Click] Pieces ");
 	PAP.pAccueil.wait(function(ev) {
 		ag2r.audit.log("[WAIT] " + st.name + " - " + ev.appliName + "." + ev.pageName + ".wait");			
-		for (var index = 0; index < 3; index++) {
-			ctx.keyStroke(e.key.Up); 
-			ag2r.audit.log("[key] Up");
-		}
-		ctx.keyStroke(e.key.Enter);//selectonne piece 3
-		ag2r.audit.log("[key] Enter");
-		ctx.keyStroke(e.key.Up); 
-		ag2r.audit.log("[key] Up");
-		ctx.keyStroke(e.key.Enter);//selectonne piece 4
-		ag2r.audit.log("[key] Enter");
+		selectionItem(3);//selectionne piece 3
+		selectionItem(1);//selectonne piece 4
 		ctx.keyStroke(e.key.Esc);//Ferme le menu contextuel
 		ag2r.audit.log("[key] Esc");
 
@@ -166,7 +176,6 @@ PAP.step({ stLieu: function(ev, sc, st) {
 	
 				PAP.pAccueil.iSurfaceMin.set(85);
 				PAP.pAccueil.iPrixMax.set(300000);
-				PAP.pAccueil.btRechercher.clickMouse();
 				ag2r.audit.endStep(sc.name,st.name);
 				sc.endStep();
 				return;
@@ -174,3 +183,48 @@ PAP.step({ stLieu: function(ev, sc, st) {
 	}, 200);
 }});
 
+/**
+ * STEP stVerifSaisie
+ * Permet de vérifier si les données saisis sont corrects
+ * @step
+ * @param : ev {event object} - représente notre évenement
+ * @param : sc {scenario object} - représente notre objet scénario
+ * @param : st {step object} - représente notre objet step
+*/
+PAP.step({ stVerifSaisie: function(ev, sc, st) {
+	ag2r.audit.startStep(sc.name,st.name);
+	var err ="";
+
+	try{
+		if(PAP.pAccueil.iTypes.get(PAP.pAccueil.iTypes.exist())!="maison"){
+			throw new Error(e.error.Fail, "saisie iTypes incorrect");
+			err+="Saisie iTypes incorrect. ";
+		}
+		if(PAP.pAccueil.iNb_pieces.get(PAP.pAccueil.iNb_pieces.exist())!=3){
+			throw new Error(e.error.Fail, "saisie iNb_pieces incorrect");
+			err+="Saisie iNb_pieces incorrect. ";
+		}
+		if(PAP.pAccueil.iNbChambres.get(PAP.pAccueil.iNbChambres.exist())!=3){
+			throw new Error(e.error.Fail, "saisie iNbChambres incorrect");
+			err+="Saisie iNbChambres incorrect. ";
+		}
+		if(PAP.pAccueil.iSurfaceMin.get(PAP.pAccueil.iSurfaceMin.exist())!=85){
+			throw new Error(e.error.Fail, "saisie iSurfaceMin incorrect");
+			err+="Saisie iSurfaceMin incorrect. ";
+		}
+		if(PAP.pAccueil.iPrixMax.get(PAP.pAccueil.iPrixMax.exist())!=300000){
+			throw new Error(e.error.Fail, "saisie iPrixMax incorrect");
+			err+="Saisie iPrixMax incorrect. ";
+		}
+	}catch(ex){
+		throw new Error(e.error.Fail,err);
+		ag2r.errors.error03;
+		sc.endScenario();
+		return;
+	}
+	ag2r.audit.log("[Click] btRechercher ");
+	PAP.pAccueil.btRechercher.clickMouse();
+	ag2r.audit.endStep(sc.name,st.name);
+	sc.endStep();
+	return;
+}});

@@ -3,6 +3,15 @@
 	<BREAKPOINTS />
 	<BOOKMARKS />
 	<FINDHISTORY>
+		<FINDWHAT><![CDATA[PAPurl]]></FINDWHAT>
+		<FINDWHAT><![CDATA[wait]]></FINDWHAT>
+		<FINDWHAT><![CDATA[TODO]]></FINDWHAT>
+		<FINDWHAT><![CDATA[output]]></FINDWHAT>
+		<FINDWHAT><![CDATA[excelFile]]></FINDWHAT>
+		<FINDWHAT><![CDATA[form]]></FINDWHAT>
+		<FINDWHAT><![CDATA[nberr]]></FINDWHAT>
+		<FINDWHAT><![CDATA[err]]></FINDWHAT>
+		<FINDWHAT><![CDATA[oAchat]]></FINDWHAT>
 		<FINDWHAT><![CDATA[types]]></FINDWHAT>
 		<FINDWHAT><![CDATA[selectRoom]]></FINDWHAT>
 		<FINDWHAT><![CDATA[selectPieces]]></FINDWHAT>
@@ -14,15 +23,6 @@
 		<FINDWHAT><![CDATA[excel]]></FINDWHAT>
 		<FINDWHAT><![CDATA[legend]]></FINDWHAT>
 		<FINDWHAT><![CDATA[legned]]></FINDWHAT>
-		<FINDWHAT><![CDATA[orignialLegende]]></FINDWHAT>
-		<FINDWHAT><![CDATA[original]]></FINDWHAT>
-		<FINDWHAT><![CDATA[mail]]></FINDWHAT>
-		<FINDWHAT><![CDATA[throw]]></FINDWHAT>
-		<FINDWHAT><![CDATA[send]]></FINDWHAT>
-		<FINDWHAT><![CDATA[Cells]]></FINDWHAT>
-		<FINDWHAT><![CDATA[table]]></FINDWHAT>
-		<FINDWHAT><![CDATA[excelFile]]></FINDWHAT>
-		<FINDWHAT><![CDATA[sc.data.]]></FINDWHAT>
 		<REPLACEWITH><![CDATA[ctx.excel]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[annonces]]></REPLACEWITH>
 		<REPLACEWITH><![CDATA[pAccueil]]></REPLACEWITH>
@@ -34,20 +34,18 @@
 		<FINDWHAT><![CDATA[]]></FINDWHAT>
 	</DEBUGTRACEFINDHISTORY>
 	<OPENDOCS>
-		<OPENDOC LineNumber="23" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='outlookSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="40" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="42" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='scRecherche']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="16" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='fonctions']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="24" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pAcueil_steps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="15" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="7" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelCommon']" Offset="0" Length="0" />
-		<OPENDOC LineNumber="-1" SearchPath="APPLI[@Name='PAP']/PAGE[@Name='pAccueil']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="8" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="24" SearchPath="PROCESS[@Name='GLOBAL']/SCRIPTS/SCRIPT[@Name='recuperationVariables']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="36" SearchPath="APPLI[@Name='PAP']/SCRIPTS/SCRIPT[@Name='pResultats_steps']" Offset="0" Length="0" />
+		<OPENDOC LineNumber="41" SearchPath="APPLI[@Name='EXCEL']/SCRIPTS/SCRIPT[@Name='excelSteps']" Offset="0" Length="0" />
 	</OPENDOCS>
 	<PROPERTIES>
 		<CurPerspective><![CDATA[2]]></CurPerspective>
 		<DebugTester><![CDATA[]]></DebugTester>
 	</PROPERTIES>
 	<WATCHES>
+		<WATCH><![CDATA[PAP.pResultats.getPath()]]></WATCH>
+		<WATCH><![CDATA[sc.data.nberr]]></WATCH>
 		<WATCH><![CDATA[sc.data.annonces[i]]]></WATCH>
 		<WATCH><![CDATA[			 	sc.data.annonces[i].getPrix()<250.000){
 ]]></WATCH>

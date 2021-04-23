@@ -27,25 +27,39 @@ PAP.step({ stGetResults: function(ev, sc, st) {
 				PAP.pResultats.oPieces.i(i).exist() &&
 				PAP.pResultats.oChambres.i(i).exist() &&
 				PAP.pResultats.oSurface.i(i).exist()) {// Affiche les informations trouvés dans la console dans la console
-
-					sc.data.annonces.push(new Annonce(
-						//TODO mettre regex dans variable
-						PAP.pResultats.oDistance.i(i).get().replace(/[^0-9\.]+/g, ""),
-						PAP.pResultats.oPieces.i(i).get().replace(/[^0-9\.]+/g, ""),
-						PAP.pResultats.oChambres.i(i).get().replace(/[^0-9\.]+/g, ""),
-						PAP.pResultats.oSurface.i(i).get().replace(/m2/g, ""),
-						PAP.pResultats.oprix.i(i).get().replace(/€/g, ""),
-						PAP.pResultats.oAnnonce.i(i).getAttribute('href')));
-					sc.data.annonces[i].log();
-					i++;
-		}					//TODO Tri excel dans robot IJC
-		ag2r.audit.endStep(sc.name,st.name, "annonces récupérées");
-		sc.endStep();
-		return;	
+				var regex = "/[^0-9\.]+/g";
+				sc.data.annonces.push(new Annonce(
+					PAP.pResultats.oDistance.i(i).get().replace(regex, ""),
+					PAP.pResultats.oPieces.i(i).get().replace(regex, ""),
+					PAP.pResultats.oChambres.i(i).get().replace(regex, ""),
+					PAP.pResultats.oSurface.i(i).get().replace(/m2/g, ""),
+					PAP.pResultats.oprix.i(i).get().replace(/€/g, ""),
+					PAP.pResultats.oAnnonce.i(i).getAttribute('href')));
+				sc.data.annonces[i].log();
+				i++;
+			}	
+			PAP.close();
+			ag2r.audit.endStep(sc.name,st.name, "annonces récupérées");
+			sc.endStep();
+			return;	
 		},
 		fail: function() {
 			ag2r.audit.log("[ERROR] " + ag2r.errors.error04, e.logIconType.Error);
-			ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error04);
+			
+			//Si la page ne se charge âs correctement, on recharge la page jusqu'à 3 fois
+			if(sc.data.nberrResultats>=3){
+				ag2r.audit.failStep(sc.name, st.name, ag2r.errors.error04);
+			}else {	
+				sc.data.nberrResultats++;
+				ag2r.audit.log("[Info] nberrResultats = "+sc.data.nberrResultats);
+				var pathResultat = PAP.pResultats.getPath();
+				PAP.close();
+				ctx.wait(function(ev){
+					ctx.shellexec('chrome', pathResultat, undefined, e.launchFlag.Hide);
+					sc.endStep(PAP.steps.stGetResults);
+					return;
+				}, 500);
+			}
 		}
 	});
 }});

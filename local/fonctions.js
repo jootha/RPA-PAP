@@ -46,3 +46,11 @@ function writeDateTime(date_) {
 	
 	return txt;
 }
+function selectionItem(position) {
+		for (var index = 0; index < position; index++) {
+			ctx.keyStroke(e.key.Up); 
+			ag2r.audit.log("[key] Up");
+		}
+		ctx.keyStroke(e.key.Enter);
+		ag2r.audit.log("[key] Enter");//selectonne Maison
+}

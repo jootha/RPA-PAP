@@ -52,19 +52,21 @@ GLOBAL.scenario({ scRecherche: function(ev, sc) {
 	
 	/****    DECLARATION DES STEPS    ****/
 	// Déclaration de l'enchainement des steps
-	
-	
+	sc.step(GLOBAL.steps.stGetPAPUrl);
+	sc.step(GLOBAL.steps.stGetExcelPath);
+	sc.step(PAP.steps.stInitData);
 	sc.step(PAP.steps.stStartPAP);
 	sc.step(PAP.steps.stLoadForm);
 	sc.step(PAP.steps.stType);
 	sc.step(PAP.steps.stPieces);
 	sc.step(PAP.steps.stChambres);
 	sc.step(PAP.steps.stLieu);
-	
+	sc.step(PAP.steps.stVerifSaisie);
+ 
 	sc.step(PAP.steps.stGetResults);
 	sc.step(EXCEL.steps.stCreateOutputFile);
 	sc.step(PAP.steps.stSendMail);
- 
+ 	
 	ag2r.audit.log("[INFO] Scenario scRecherche lancé ...");
 	ag2r.audit.startScenario();
 }}, ctx.dataManagers.rootData).setId('7bf54ce6-321a-4883-bd42-e93a20300c1c') ;
